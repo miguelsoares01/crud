@@ -1,0 +1,21 @@
+#pag-form-section {
+  padding: 20px 0;
+}
+
+.pag-form-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.pag-form-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (min-width: 576px) {
+  #pag-form-section {
+    padding: 40px 0;
+  }
+}
