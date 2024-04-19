@@ -19,6 +19,8 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.unifametro.apirestful.dto.StudentDTO;
 import com.unifametro.apirestful.services.StudentService;
 
+import io.swagger.v3.oas.annotations.Operation;
+
 @RestController
 @RequestMapping(value = "/students")
 public class StudentResource {
@@ -26,6 +28,7 @@ public class StudentResource {
 	@Autowired
 	private StudentService service;
 	
+	@Operation(summary = "Busca todos os alunos", method = "GET")
 	@GetMapping
 	public ResponseEntity<Page<StudentDTO>> findAll(Pageable pageable){
 		
