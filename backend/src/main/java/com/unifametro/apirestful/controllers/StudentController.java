@@ -23,7 +23,7 @@ import io.swagger.v3.oas.annotations.Operation;
 
 @RestController
 @RequestMapping(value = "/students")
-public class StudentResource {
+public class StudentController {
 	
 	@Autowired
 	private StudentService service;
@@ -37,6 +37,7 @@ public class StudentResource {
 		return ResponseEntity.ok().body(list);
 	}
 	
+	@Operation(summary = "Busca alunos po ID", method = "GET")
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<StudentDTO> findById(@PathVariable Long id){
 		
