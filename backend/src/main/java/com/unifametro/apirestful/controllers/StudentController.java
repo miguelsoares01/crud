@@ -46,6 +46,7 @@ public class StudentController {
 		return ResponseEntity.ok().body(dto);
 	}
 	
+	@Operation(summary = "Cadastra novos alunos", method = "POST")
 	@PostMapping
 	public ResponseEntity<StudentDTO> insert(@RequestBody StudentDTO dto){
 		
