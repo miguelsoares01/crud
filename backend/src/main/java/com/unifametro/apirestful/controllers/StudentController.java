@@ -37,7 +37,7 @@ public class StudentController {
 		return ResponseEntity.ok().body(list);
 	}
 	
-	@Operation(summary = "Busca alunos po ID", method = "GET")
+	@Operation(summary = "Busca alunos por ID", method = "GET")
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<StudentDTO> findById(@PathVariable Long id){
 		
@@ -57,6 +57,7 @@ public class StudentController {
 		return ResponseEntity.created(uri).body(dto);
 	}
 	
+	@Operation(summary = "Atualiza aluno existente", method = "PUT")
 	@PutMapping(value = "/{id}")
 	public ResponseEntity<StudentDTO> update(@PathVariable Long id, @RequestBody StudentDTO dto){
 		
