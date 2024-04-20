@@ -66,6 +66,7 @@ public class StudentController {
 		return ResponseEntity.ok().body(dto);
 	}
 	
+	@Operation(summary = "Deleta aluno existente", method = "DELETE")
 	@DeleteMapping(value = "/{id}")
 	public ResponseEntity<StudentDTO> delete(@PathVariable Long id){
 		
