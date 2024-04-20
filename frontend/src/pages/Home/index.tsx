@@ -7,13 +7,13 @@ export default function Home() {
     return (
         <div className="pag-container ">
             <div className="pag-mb40 pag-mt40">
-                <h1>Projeto CRUD</h1>
+                <h1>Pós-Graduação em Engenharia de Software, Devops e Computação em Nuvem</h1>
             </div>
             <div className="pag-mb20 pag-home-content">
-                <h4>Projeto de Pós-Graduação da Unifametro</h4>
+                <h2>Disciplina de Arquitetura e Frameworks para Desenvolvimento Web</h2>
             </div>
             <div className="pag-mb40 pag-home-content">
-                <h5>Disciplina de Fremeworks Web</h5>
+                <h3>Projeto CRUD</h3>
             </div>
             <div>
                 <Link to="/catalogs">
